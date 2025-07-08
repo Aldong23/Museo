@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+    font-family: "Montserrat";
+    text-decoration: none;
+}
+
+.container {
+    max-width: 90vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.long-text {
+    padding: 1em;
+    width: 100%;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.flex > div {
+    flex: 1;
+}
+
+.photo-wrapper img {
+    height: 200px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+    .flex {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .photo-wrapper img {
+        height: 120px;
+        cursor: pointer;
+    }
+}
+
+button {
+    all: unset;
+}
+
+label {
+    font-weight: bold;
+}
+
+/* MODAL */
+.hidden {
+    display: none;
+}
+
+.image-modal {
+    display: none;
+    /* Ensure it's hidden by default */
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    max-width: 90%;
+    max-height: 90%;
+    transition: transform 0.3s ease;
+    cursor: zoom-in;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.photo-detail {
+    border: 1px solid gray;
+    border-radius: 8px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+.photo-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.photo-detail label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}

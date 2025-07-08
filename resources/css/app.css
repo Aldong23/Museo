@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* =================================================== MONTSERRAT ======================================= */
+@font-face {
+    font-family: 'montserrat';
+    src: url('/fonts/Montserrat-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'montserrat';
+    src: url('/fonts/Montserrat-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'montserrat';
+    src: url('/fonts/Montserrat-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'montserrat';
+    src: url('/fonts/Montserrat-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'montserrat';
+    src: url('/fonts/Montserrat-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+@layer base {
+    :root {
+        --color-midnight: 222deg 40% 11%;
+        --color-midnight-1: 217deg 27% 15%;
+
+        --color-crimson: 354deg 70% 54%;
+        --color-crimson-1: 354deg 60% 60%;
+
+        /* for background */
+        --color-bg-0: 0deg 0% 100%;
+        --color-bg-1: 0deg 0% 96%;
+        --color-bg-2: 0deg 0% 90%;
+
+        /* for text */
+        --color-txt-primary: 210deg 46% 10%;
+        --color-txt-secondary: 210deg 10% 30%;
+        --color-txt-tertiary: 210deg 6% 40%;
+
+        /* for border */
+        --color-border-primary: 0deg 0% 50%;
+        --color-border-secondary: 0deg 0% 90%;
+
+        /* for buttons */
+        --color-btn-yellow: 61deg 60% 50%;
+        --color-btn-hyellow: 61deg 60% 55%;
+        --color-btn-red: 6deg 59% 51%;
+        --color-btn-hred: 6deg 68% 54%;
+        --color-btn-blue: 215deg 60% 50%;
+        --color-btn-hblue: 215deg 68% 53%;
+        --color-btn-green: 129deg 60% 50%;
+        --color-btn-hgreen: 129deg 68% 53%;
+        --color-btn-orange: 31deg 60% 50%;
+        --color-btn-horange: 31deg 68% 53%;
+        --color-btn-purple: 277deg 60% 50%;
+        --color-btn-hpurple: 277deg 68% 53%;
+    }
+}

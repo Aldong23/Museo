@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body {
+    font-family: 'Poppins';
+    touch-action: pan-y;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+.controls {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 1;
+}
+
+.controls button {
+    border-radius: 50%;
+    border: none;
+    height: 50px;
+    width: 50px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    z-index: 1;
+}
+
+.carousel-cont {
+
+    overflow: hidden;
+    position: relative;
+    touch-action: none;
+    width: 100%;
+}
+
+.carousel-cont img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+    cursor: grab;
+}
+
+input, textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1em;
+}
+
+textarea {
+    resize: none;
+    height: 200px;
+}
+
+.fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: contain;
+    z-index: 9999;
+}
+
+.information {
+    background-color: white;
+    width: 80vw;
+    margin: auto;
+    margin-top: 30px;
+    box-shadow: 0 5px 10px 0 rgb(214, 214, 214);;
+}
+
+.bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+.input {
+    margin: 10px;
+    position: relative;
+}
+
+/* .input label {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+
+}
+
+.input input:focus ~ label {
+    color: #4e91ff;
+}    */
+
+@media only screen and (min-width: 700px) {
+    body {
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+    }
+
+    .carousel-cont img {
+        height: 100vh;
+        width: 100vw;
+        margin: auto;
+
+    }
+
+    .flex {
+        display: flex;
+        gap: 10px;
+    }
+
+    .flex > div {
+        flex: 1;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    input, textarea {
+        padding: 1.5em;
+        border-radius: 5px;
+        border: none;
+        outline: 1px solid gray;
+    }
+    input{font-size: 18px;}
+}

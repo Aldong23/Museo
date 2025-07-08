@@ -1,0 +1,33 @@
+.auth-container {
+    margin: 0;
+    min-height: 100vh;
+    height: auto;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    animation: slide 15s infinite;
+}
+
+@keyframes slide {
+    0% { background-image: url('/images/brands/1.JPG'); }
+    33% { background-image: url('/images/brands/2.jpg'); }
+    66% { background-image: url('/images/brands/3.JPG'); }
+    100% { background-image: url('/images/brands/4.JPG'); }
+}
+
+.wrapper-page {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    max-width: 500px;
+    padding: 4rem 2.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 640px) {
+    .wrapper-page {
+        width: 90%;
+        padding: 3rem 1.5rem;
+    }
+}
